@@ -19,7 +19,8 @@ pipeline {
                   ])
               }
           }
-      }        stage('Build') {
+      }
+        stage('Build') {
             steps {
                 echo 'Build'
                 sh "mvn --batch-mode package" 
